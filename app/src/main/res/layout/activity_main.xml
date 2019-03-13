@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/mainbromo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameapps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Barangku Shop"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/txtslogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameapps"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/slogan"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Signin" />
+
+</RelativeLayout>
