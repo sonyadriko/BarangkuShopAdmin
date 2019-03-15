@@ -103,6 +103,16 @@ public class OrderStatus extends AppCompatActivity {
                         startActivity(orderDetail);
                     }
                 });
+
+                viewHolder.setItemClickListener(new ItemClickListener() {
+                    @Override
+                    public void OnClick(View view, int position, boolean isLongClick) {
+                        Intent orderDetail = new Intent(OrderStatus.this, OrderDetail.class);
+                        Common.currentRequest = model;
+                        orderDetail.putExtra("OrderId",adapter.getRef(position).getKey());
+                        startActivity(orderDetail);
+                    }
+                });
             }
         };
         adapter.notifyDataSetChanged();
@@ -133,7 +143,7 @@ public class OrderStatus extends AppCompatActivity {
         final View viewz = inflater.inflate(R.layout.update_order_layout, null);
 
         spinner = viewz.findViewById(R.id.statusSpinner);
-        spinner.setItems("Placed", "On Procced", "Shipped");
+        spinner.setItems("Waiting Payment", "Placed", "On Procced", "Shipped");
 
         alertdialog.setView(viewz);
 

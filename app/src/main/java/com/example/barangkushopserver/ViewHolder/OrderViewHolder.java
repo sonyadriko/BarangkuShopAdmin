@@ -10,10 +10,10 @@ import android.widget.TextView;
 import com.example.barangkushopserver.Interface.ItemClickListener;
 import com.example.barangkushopserver.R;
 
-public class OrderViewHolder extends RecyclerView.ViewHolder  {
+public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     public TextView txtOrderId, txtOrderStatus, txtOrderPhone, txtOrderAddress;
-    public Button btnEdit, btnRemove, btnDetail, btnDirection;
+    public Button btnEdit, btnRemove, btnDetail;
 
 
     private ItemClickListener itemClickListener;
@@ -28,12 +28,11 @@ public class OrderViewHolder extends RecyclerView.ViewHolder  {
 
         btnDetail = itemView.findViewById(R.id.btnDetail);
         btnEdit = itemView.findViewById(R.id.btnEdit);
-        btnDirection = itemView.findViewById(R.id.btnDirection);
         btnRemove = itemView.findViewById(R.id.btnRemove);
 
-      //itemView.setOnClickListener(this);
+      itemView.setOnClickListener(this);
     }
-/*
+
     public void setItemClickListener(ItemClickListener itemClickListener) {
         this.itemClickListener = itemClickListener;
     }
@@ -41,7 +40,6 @@ public class OrderViewHolder extends RecyclerView.ViewHolder  {
     @Override
     public void onClick(View v) {
         itemClickListener.OnClick(v, getAdapterPosition(), false);
-    } */
-
+    }
 
 }

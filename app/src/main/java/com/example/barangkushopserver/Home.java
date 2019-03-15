@@ -122,10 +122,12 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     }
 
     private void updateToken(String token) {
-        FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference tokens = db.getReference("Tokens");
-        Token data = new Token(token,true);
-        tokens.child(Common.currentUser.getPhone()).setValue(data);
+        if (Common.currentUser != null) {
+            FirebaseDatabase db = FirebaseDatabase.getInstance();
+            DatabaseReference tokens = db.getReference("Tokens");
+            Token data = new Token(token, true);
+            tokens.child(Common.currentUser.getPhone()).setValue(data);
+        }
     }
 
     private void ShowDialog() {
