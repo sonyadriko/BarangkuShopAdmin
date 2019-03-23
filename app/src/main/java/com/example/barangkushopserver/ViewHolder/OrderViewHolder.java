@@ -12,7 +12,7 @@ import com.example.barangkushopserver.R;
 
 public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    public TextView txtOrderId, txtOrderStatus, txtOrderPhone, txtOrderAddress;
+    public TextView txtOrderId, txtOrderStatus, txtOrderPhone, txtOrderIdGame, txtOrderDate, txtOrderCatatan, txtOrderContact;
     public Button btnEdit, btnRemove, btnDetail;
 
 
@@ -24,7 +24,10 @@ public class OrderViewHolder extends RecyclerView.ViewHolder implements View.OnC
         txtOrderId = itemView.findViewById(R.id.order_id);
         txtOrderStatus = itemView.findViewById(R.id.order_status);
         txtOrderPhone = itemView.findViewById(R.id.order_phone);
-        txtOrderAddress = itemView.findViewById(R.id.order_address);
+        txtOrderIdGame = itemView.findViewById(R.id.order_idgame);
+        txtOrderDate = itemView.findViewById(R.id.order_date);
+        txtOrderCatatan = itemView.findViewById(R.id.order_catatan);
+        txtOrderContact = itemView.findViewById(R.id.order_contact);
 
         btnDetail = itemView.findViewById(R.id.btnDetail);
         btnEdit = itemView.findViewById(R.id.btnEdit);

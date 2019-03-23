@@ -79,8 +79,11 @@ public class OrderStatus extends AppCompatActivity {
             protected void populateViewHolder(OrderViewHolder viewHolder, final Request model, final int position) {
                 viewHolder.txtOrderId.setText(adapter.getRef(position).getKey());
                 viewHolder.txtOrderStatus.setText(Common.convertCodeToStatus(model.getStatus()));
-                viewHolder.txtOrderAddress.setText(model.getAddress());
+                viewHolder.txtOrderIdGame.setText(model.getIdgame());
+                viewHolder.txtOrderContact.setText(model.getContact());
+                viewHolder.txtOrderCatatan.setText(model.getCatatan());
                 viewHolder.txtOrderPhone.setText(model.getPhone());
+                viewHolder.txtOrderDate.setText(Common.getDate(Long.parseLong(adapter.getRef(position).getKey())));
 
                 viewHolder.btnEdit.setOnClickListener(new View.OnClickListener() {
                     @Override

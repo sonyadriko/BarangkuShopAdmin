@@ -23,10 +23,10 @@
             android:layout_height="wrap_content"
             android:text="JUDUL JUALAN"
             android:textSize="24dp"
-            android:background="@color/OverlayBackground"
+            android:background="#fff"
             android:layout_alignParentBottom="true"
             android:gravity="center"
-            android:textColor="@android:color/white" />
+            android:textColor="#000" />
 
     </RelativeLayout>
 

@@ -63,7 +63,7 @@
                         android:textStyle="italic" />
 
                     <TextView
-                        android:id="@+id/order_ign_detail"
+                        android:id="@+id/order_idgame_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -73,12 +73,22 @@
                         android:textStyle="italic" />
 
                     <TextView
-                        android:id="@+id/order_comment_detail"
+                        android:id="@+id/order_catatan_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:gravity="center_vertical|start"
                         android:text="Comment"
+                        android:textAllCaps="true"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/order_contact_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical|start"
+                        android:text="Contact"
                         android:textAllCaps="true"
                         android:textStyle="italic" />
 

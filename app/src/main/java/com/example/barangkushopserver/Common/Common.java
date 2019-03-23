@@ -6,6 +6,9 @@ import com.example.barangkushopserver.Remote.APIService;
 import com.example.barangkushopserver.Remote.FCMRetrofitClient;
 import com.example.barangkushopserver.Remote.RetrofitClient;
 
+import java.util.Calendar;
+import java.util.Locale;
+
 public class Common {
     public static User currentUser;
     public static Request currentRequest;
@@ -32,5 +35,13 @@ public class Common {
 
     public static APIService getFCMClient(){
         return FCMRetrofitClient.getClient(fcmURL).create(APIService.class);
+    }
+
+    public static String getDate(long time) {
+        Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
+        calendar.setTimeInMillis(time);
+        StringBuilder date = new StringBuilder(
+                android.text.format.DateFormat.format("dd-MM-yyyy HH:mm", calendar).toString());
+        return date.toString();
     }
 }

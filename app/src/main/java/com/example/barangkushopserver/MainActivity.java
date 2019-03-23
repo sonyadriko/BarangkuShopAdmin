@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     Button signIn;
-    TextView txtSlogan;
+    TextView txtSlogan,nameapp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         signIn = findViewById(R.id.buttonsignin);
+        nameapp = findViewById(R.id.nameapps);
         txtSlogan = findViewById(R.id.txtslogan);
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Rainbow.otf");
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/hellovintage.ttf");
+        Typeface typeface1 = Typeface.createFromAsset(getAssets(), "fonts/sweetlemon.ttf");
         txtSlogan.setTypeface(typeface);
 
         signIn.setOnClickListener(new View.OnClickListener() {

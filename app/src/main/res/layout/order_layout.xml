@@ -36,6 +36,16 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|start"
+                    android:text="ORDER DATE"
+                    android:textAllCaps="true"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:id="@+id/order_status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -56,12 +66,30 @@
                     android:textStyle="italic" />
 
                 <TextView
-                    android:id="@+id/order_address"
+                    android:id="@+id/order_idgame"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical|start"
-                    android:text="IGN Buyer"
+                    android:text="ID Karakter"
+                    android:textAllCaps="true"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/order_catatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Catatan"
+                    android:textAllCaps="true"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/order_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Contact"
                     android:textAllCaps="true"
                     android:textStyle="italic" />
 

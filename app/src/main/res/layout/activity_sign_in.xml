@@ -27,7 +27,10 @@
     <Button
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
+        android:textSize="16dp"
         android:layout_height="wrap_content"
+        android:background="@color/MainColor"
+        android:textColor="#fff"
         android:layout_alignParentBottom="true"
         android:text="Sign In"/>
 
