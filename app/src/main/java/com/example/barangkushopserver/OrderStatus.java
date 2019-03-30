@@ -146,7 +146,7 @@ public class OrderStatus extends AppCompatActivity {
         final View viewz = inflater.inflate(R.layout.update_order_layout, null);
 
         spinner = viewz.findViewById(R.id.statusSpinner);
-        spinner.setItems("Waiting Payment", "Placed", "On Procced", "Shipped");
+        spinner.setItems("Menunggu Pembayaran", "Pembayaran Berhasil", "Sedang di Proses Admin", "Transaksi Selesai");
 
         alertdialog.setView(viewz);
 
@@ -182,7 +182,7 @@ public class OrderStatus extends AppCompatActivity {
                         for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                             Token token = postSnapshot.getValue(Token.class);
 
-                            Notification notification = new Notification("Barangku", "Your order " + key + " was updated");
+                            Notification notification = new Notification( "Your order " + key + " was updated","Barangku");
                             Sender sender = new Sender(token.getToken(), notification);
 
                             mService.sendNotification(sender)

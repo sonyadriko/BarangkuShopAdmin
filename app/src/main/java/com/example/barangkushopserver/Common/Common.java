@@ -22,13 +22,13 @@ public class Common {
 
     public static String convertCodeToStatus(String code){
         if (code.equals("0"))
-            return "Waiting Payment";
+            return "Menunggu Pembayaran";
         else if (code.equals("1"))
-            return "Placed";
+            return "Pembayaran Berhasil";
         else if (code.equals("2"))
-            return "On Procced";
+            return "Sedang di Proses Admin";
         else
-            return "Shipped";
+            return "Transaksi Selesai";
     }
 
     public static final String fcmURL = "https://fcm.googleapis.com/";
