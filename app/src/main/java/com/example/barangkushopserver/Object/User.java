@@ -1,7 +1,7 @@
 package com.example.barangkushopserver.Object;
 
 public class User {
-    private String Name,Password,Phone,isStaff;
+    private String Name,Password,Phone,isStaff, SecureCode;
 
     public User() {
     }
@@ -41,5 +41,13 @@ public class User {
 
     public void setIsStaff(String isStaff) {
         this.isStaff = isStaff;
+    }
+
+    public String getSecureCode() {
+        return SecureCode;
+    }
+
+    public void setSecureCode(String secureCode) {
+        SecureCode = secureCode;
     }
 }

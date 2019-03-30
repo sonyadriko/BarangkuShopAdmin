@@ -278,6 +278,10 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             Intent orderss = new Intent(Home.this, OrderStatus.class);
             startActivity(orderss);
         }
+        if (id == R.id.nav_users){
+            Intent userss = new Intent(Home.this, DataUser.class);
+            startActivity(userss);
+        }
         if (id == R.id.nav_logout){
             Intent ignOut = new Intent(Home.this, SignIn.class);
             ignOut.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

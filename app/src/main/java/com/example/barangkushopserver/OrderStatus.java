@@ -102,7 +102,7 @@ public class OrderStatus extends AppCompatActivity {
                     public void onClick(View v) {
                         Intent orderDetail = new Intent(OrderStatus.this, OrderDetail.class);
                         Common.currentRequest = model;
-                        orderDetail.putExtra("OrderId",adapter.getRef(position).getKey());
+                        orderDetail.putExtra("OrderId", adapter.getRef(position).getKey());
                         startActivity(orderDetail);
                     }
                 });
@@ -112,7 +112,7 @@ public class OrderStatus extends AppCompatActivity {
                     public void OnClick(View view, int position, boolean isLongClick) {
                         Intent orderDetail = new Intent(OrderStatus.this, OrderDetail.class);
                         Common.currentRequest = model;
-                        orderDetail.putExtra("OrderId",adapter.getRef(position).getKey());
+                        orderDetail.putExtra("OrderId", adapter.getRef(position).getKey());
                         startActivity(orderDetail);
                     }
                 });
